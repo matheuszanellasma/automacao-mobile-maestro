@@ -3,7 +3,7 @@ appId: com.qazandoqafood
 - launchApp
 
 - runFlow:
-    file: ../../subflows/login.yaml
+    file: ../subflows/login.yaml
     env:
       EMAIL: "" 
       SENHA: 123456

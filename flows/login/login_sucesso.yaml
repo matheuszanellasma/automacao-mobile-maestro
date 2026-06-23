@@ -5,7 +5,7 @@ tags:
 - launchApp
 
 - runFlow:
-    file: ../../subflows/login.yaml
+    file: ../subflows/login.yaml
     env:
       EMAIL: teste@teste.com
       SENHA: 123456
