@@ -1,0 +1,11 @@
+appId: com.qazandoqafood
+---
+- launchApp
+
+- runFlow:
+    file: ../../subflows/login.yaml
+    env:
+      EMAIL: "" 
+      SENHA: 123456
+
+- assertVisible: "Erro ao realizar login"

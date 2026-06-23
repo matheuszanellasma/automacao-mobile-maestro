@@ -1,0 +1,6 @@
+appId: com.qazandoqafood
+---
+- tapOn: "confirm-order-button"
+- scroll
+- tapOn: ${FORMA_DE_PAGAMENTO}
+- tapOn: "do-order-button"

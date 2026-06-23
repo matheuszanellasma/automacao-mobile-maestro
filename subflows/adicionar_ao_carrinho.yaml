@@ -1,0 +1,4 @@
+appId: com.qazandoqafood
+---
+- tapOn: "add-item-buttom"
+- tapOn: "open-cart-button"

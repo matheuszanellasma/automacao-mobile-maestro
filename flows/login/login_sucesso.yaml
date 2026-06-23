@@ -1,0 +1,13 @@
+appId: com.qazandoqafood
+tags:
+  - smoke
+---
+- launchApp
+
+- runFlow:
+    file: ../../subflows/login.yaml
+    env:
+      EMAIL: teste@teste.com
+      SENHA: 123456
+
+- assertVisible: "Pastelaria da Maria"

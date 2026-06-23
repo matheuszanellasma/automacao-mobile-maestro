@@ -1,0 +1,29 @@
+appId: com.qazandoqafood
+tags:
+    - smoke
+---
+- launchApp
+
+- runFlow:
+    file: ../../subflows/login.yaml
+    env:
+        EMAIL: teste@teste.com
+        SENHA: 123456
+
+- runFlow:
+    file: ../../subflows/selecionar_endereco.yaml
+
+- runFlow:
+    file: ../../subflows/selecionar_restaurante.yaml
+    env:
+        RESTAURANTE: "Pastelaria da Maria"
+
+- runFlow:
+    file: ../../subflows/adicionar_ao_carrinho.yaml
+
+- runFlow:
+    file: ../../subflows/finalizar_pedido.yaml
+    env:
+        FORMA_DE_PAGAMENTO: "dinheiro"
+
+- assertVisible: "Pedido Realizado"

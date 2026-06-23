@@ -1,0 +1,8 @@
+appId: com.qazandoqafood
+---
+- tapOn: "E-mail"
+- inputText: ${EMAIL}
+- tapOn: "Senha"
+- inputText: ${SENHA}
+- hideKeyboard
+- tapOn: "login-button"
