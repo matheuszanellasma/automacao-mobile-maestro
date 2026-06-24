@@ -47,21 +47,18 @@ Para garantir a portabilidade e facilitar auditorias ou execuções de terceiros
 ## 🛠️ Como Executar os Testes Localmente
 
 ### Pré-requisitos
-1. Possuir o **Maestro CLI** instalado na máquina.
-2. Estar com um Emulador Android ativo (via Android Studio) ou um celular físico conectado via USB com a **Depuração USB** ativa.
+- **Maestro CLI** instalado na máquina.
+- **Emulador Android** ou celular físico conectado com a Depuração USB ativa.
+- **Arquivo APK** do aplicativo (disponível na aba de Releases) baixado e colocado na raiz do projeto.
 
-### Passo a Passo
-
-1. Clone este repositório para o seu ambiente local:
-git clone [https://github.com/seu-usuario/automacao-mobile-maestro.git](https://github.com/seu-usuario/automacao-mobile-maestro.git)
-
-2. Acesse o diretório do projeto:
+### Passo a Passo (Configuração e Execução)
+```bash
+git clone https://github.com/matheuszanellasma/automacao-mobile-maestro.git
 cd automacao-mobile-maestro
+maestro test login/
+```
 
-3. Execute o cenário desejado informando o caminho do arquivo do teste:
-maestro test login/login_sucesso.yaml
-
-  ---
+---
 
 ## 👤 Autor
 
