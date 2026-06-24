@@ -3,7 +3,6 @@ name: Maestro Cloud Tests
 on:
   push:
     branches: [ "master" ]
-  
 
 jobs:
   maestro-cloud:
@@ -13,11 +12,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Download APK de forma rápida
+        run: |
+          curl -L -o app-teste.apk "https://docs.google.com/uc?export=download&id=1RQ75uJtcFpCRp-9loqpxJqRUTueWFsRY"
+
       - name: Run tests on Maestro Cloud
         uses: mobile-dev-inc/action-maestro-cloud@v2.0.2
         with:
           api-key: ${{ secrets.MAESTRO_API_KEY }}
           project-id: ${{ secrets.MAESTRO_PROJECT_ID }}
-          app-file: https://docs.google.com/uc?export=download&id=1RQ75uJtcFpCRp-9loqpxJqRUTueWFsRY
-          workspace: flows  
+          app-file: app-teste.apk         # <-- Agora apontamos para o arquivo baixado localmente
+          workspace: flows
           include-tags: smoke
