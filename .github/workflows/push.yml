@@ -18,7 +18,6 @@ jobs:
         with:
           api-key: ${{ secrets.MAESTRO_API_KEY }}
           project-id: ${{ secrets.MAESTRO_PROJECT_ID }}
-          app-file: qazandofood.apk
+          app-file: https://docs.google.com/uc?export=download&id=1RQ75uJtcFpCRp-9loqpxJqRUTueWFsRY
           workspace: flows  
           include-tags: smoke
-          async: true
