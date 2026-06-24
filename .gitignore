@@ -1,0 +1,6 @@
+# Aplicativos e Binários pesados
+qazandofood.apk
+*.apk
+
+# Capturas de tela geradas localmente pelo Maestro
+.maestro/screenshots/
