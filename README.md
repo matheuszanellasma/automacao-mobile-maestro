@@ -17,15 +17,15 @@ Este repositório contém o projeto de automação de testes mobile para o aplic
 ## 📋 Estrutura de Testes
 
 ### 🔑 Módulo de Login
-- `login_sucesso.yaml`: Validação do fluxo principal de autenticação com dados corretos.
+- `login_sucesso.yaml`: Validação do fluxo principal de autenticação com dados corretos. (smoke)
 - `login_email_em_branco.yaml`: Validação do comportamento do sistema ao omitir o e-mail.
 - `login_sem_arroba.yaml`: Teste de validação sintática do campo de e-mail (ausência do `@`).
 - `login_sem_dominio.yaml`: Teste de validação de estrutura do e-mail incompleto (ex: `usuario@`).
 - `login_senha_em_branco.yaml`: Validação de comportamento ao omitir o campo de senha.
 
 ### 🛒 Módulo de Pedidos
-- `pedido_cartao_sucesso.yaml`: Fluxo completo de ponta a ponta realizando pagamento via cartão de crédito.
-- `pedido_dinheiro_sucesso.yaml`: Fluxo completo realizando o pagamento em dinheiro diretamente na entrega.
+- `pedido_cartao_sucesso.yaml`: Fluxo completo de ponta a ponta realizando pagamento via cartão de crédito. (smoke)
+- `pedido_dinheiro_sucesso.yaml`: Fluxo completo realizando o pagamento em dinheiro diretamente na entrega. (smoke)
 
 ---
 
