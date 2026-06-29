@@ -2,7 +2,7 @@
 
 Este repositório contém o projeto de automação de testes mobile para o aplicativo **Qazandofood** utilizando o framework **Maestro**. O objetivo principal é garantir a qualidade do fluxo de Login e Fechamento de Pedidos
 
----
+--- 
 
 ## 🚀 Tecnologias e Ferramentas Utilizadas
 
