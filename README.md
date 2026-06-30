@@ -1,3 +1,5 @@
+[![CI](https://github.com/matheuszanellasma/automacao-mobile-maestro/actions/workflows/push.yml/badge.svg)](https://github.com/matheuszanellasma/automacao-mobile-maestro/actions)
+
 # 📱 Automação Mobile com Maestro - Qazandofood
 
 Este repositório contém o projeto de automação de testes mobile para o aplicativo **Qazandofood** utilizando o framework **Maestro**. O objetivo principal é garantir a qualidade do fluxo de Login e Fechamento de Pedidos
